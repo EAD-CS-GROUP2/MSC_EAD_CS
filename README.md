@@ -31,7 +31,7 @@ Freight Management Simplified!
 * Or else Copy the `target/FMS.war` to the installed `apache-tomcat-7.x.x/webapps` folder & start the tomcat by running 
   * `./bin/startup.sh`
 
-* Running the Vessel Simulator: open the Colombo Rider project in Eclipse IDE and run the `ColomboRider.java` - Location updates will be sent to the webapp in background.
+* Running the Vessel Simulator: open the `Colombo Rider` project resides in `vessel_simulator` folder in Eclipse IDE and run the `ColomboRider.java` - Location updates will be sent to the webapp in background.
 
 ##Demonstration
 * Test backoffice staff user will be created- username: staff1@msc.ship | password: 123

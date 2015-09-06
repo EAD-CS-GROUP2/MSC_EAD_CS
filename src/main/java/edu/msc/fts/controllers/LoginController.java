@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.crypto.password.StandardPasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -104,6 +105,9 @@ public class LoginController {
     public String redirectRegister(User user, Model model) {
 
         user.setId(UUID.randomUUID().toString());
+        StandardPasswordEncoder encoder = new StandardPasswordEncoder("mobile$123");
+        String result = encoder.encode(user.getPassword());
+        user.setPassword(result);
         userRepositoryDao.save(user);
 
         model.addAttribute("success_reg", "true");
@@ -116,6 +120,10 @@ public class LoginController {
     public String redirectRegister2(User user, Model model) {
 
         user.setId(UUID.randomUUID().toString());
+        StandardPasswordEncoder encoder = new StandardPasswordEncoder("mobile$123");
+        String result = encoder.encode(user.getPassword());
+        user.setPassword(result);
+
         userRepositoryDao.save(user);
 
         model.addAttribute("success_reg", "true");
@@ -139,13 +147,19 @@ public class LoginController {
         if (user == null) {
                 User user1 = new User();
                 user1.setId(UUID.randomUUID().toString());
-                user1.setPassword("123");
+
+            StandardPasswordEncoder encoder = new StandardPasswordEncoder("mobile$123");
+            String result = encoder.encode("123");
+
+            user1.setPassword(result);
                 user1.setRole(2);//staff role
                 user1.setUsername(testAdminUsername);
 
                 User user2 = new User();
                 user2.setId(UUID.randomUUID().toString());
-                user2.setPassword("123");
+
+            String result2 = encoder.encode("123");
+            user2.setPassword(result2);
                 user2.setRole(1);//Customer role
                 user2.setUsername("customer1@msc.ship");
 

@@ -20,12 +20,14 @@
   * `mvn clean install`
 
 * Start Mongo daemon on the server ([guide](http://docs.mongodb.org/master/tutorial/manage-mongodb-processes/))
-`./mongod`
+  * `./mongod`
 
-* Make changes to the app configuration file if needed: src/main/resources/application.properties (uses the default mongo port: 27017)
+* Make changes to the app configuration file if needed: `src/main/resources/application.properties` (uses the default mongo port: 27017)
 
-* To run the App either could use the pre-configured maven jetty server by executing following command: `mvn jetty:run` (now the app will be started at http://localhost:8099/FMS)
-Copy the target/FMS.war to the installed tomcatHome/webapps folder & start the tomcat by running ./bin/startup.sh
+* To run the App either could use the pre-configured maven jetty server by executing following command: 
+  * `mvn jetty:run` (now the app will be started at http://localhost:8099/FMS)
+Copy the target/FMS.war to the installed tomcatHome/webapps folder & start the tomcat by running 
+  * `./bin/startup.sh`
 
 ##Demonstration
 * Test backoffice staff user will be created- username: staff1@msc.ship | password: 123

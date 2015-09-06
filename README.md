@@ -25,8 +25,8 @@
 * Make changes to the app configuration file if needed: `src/main/resources/application.properties` (uses the default mongo port: 27017)
 
 * To run the App either could use the pre-configured maven jetty server by executing following command: 
-  * `mvn jetty:run` (now the app will be started at http://localhost:8099/FMS)
-Copy the target/FMS.war to the installed tomcatHome/webapps folder & start the tomcat by running 
+  * `mvn jetty:run` (now the app will be started at: [http://localhost:8099/FMS/](http://localhost:8099/FMS/))
+* Or else Copy the `target/FMS.war` to the installed `apache-tomcat-7.x.x/webapps` folder & start the tomcat by running 
   * `./bin/startup.sh`
 
 ##Demonstration

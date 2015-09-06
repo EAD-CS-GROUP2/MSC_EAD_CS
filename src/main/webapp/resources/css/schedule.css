@@ -1,0 +1,41 @@
+/* 
+    Created on : Aug 10, 2014, 6:19:32 PM
+    Author     : cjayawickrema
+*/
+
+#schedule-items {
+    clear: left;
+}
+
+#schedule-items > table {
+    table-layout: fixed;
+}
+
+#schedule-items td {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+}
+
+#schedule-items > table th {
+    text-align: center;
+    border: 1px solid #ddd;
+    background: #0072C5;
+    padding: 10px 0;
+    color: #fff;
+}
+
+.shipping-plan {
+    margin: 30px 0
+}
+
+.shipping-plan td{
+    padding: 10px 20px;
+}
+
+.shipping-plan .col-header {
+    font-weight: bolder;
+}
+
+#search-form .form-control {
+    margin: 10px 0;
+}

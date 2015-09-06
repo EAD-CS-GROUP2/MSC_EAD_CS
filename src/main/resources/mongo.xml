@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mongo="http://www.springframework.org/schema/data/mongo"
+       xmlns:repository="http://www.springframework.org/schema/data/repository"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+
+
+        http://www.springframework.org/schema/data/mongo http://www.springframework.org/schema/data/mongo/spring-mongo.xsd
+        http://www.springframework.org/schema/data/repository http://www.springframework.org/schema/data/repository/spring-repository.xsd">
+
+    <!-- Default bean name is 'mongo' -->
+    <mongo:mongo write-concern="SAFE" host="${mongo.host}" port="${mongo.port}" >
+        <mongo:options auto-connect-retry="true" socket-keep-alive="true" />
+    </mongo:mongo>
+
+    <mongo:db-factory dbname="${mongo.db.name}" mongo-ref="mongo" />
+    <mongo:mapping-converter id="converter" />
+
+    <bean id="mongoTemplate" class="org.springframework.data.mongodb.core.MongoTemplate">
+        <constructor-arg name="mongoDbFactory" ref="mongoDbFactory" />
+    </bean>
+
+    <!--<mongo:repositories base-package="edu.msc.fts.repository" mongo-template-ref="mongoTemplate" >-->
+        <!--<repository:include-filter type="assignable" expression="org.springframework.data.mongodb.repository.MongoRepository"/>-->
+    <!--</mongo:repositories>-->
+
+    <!-- Base package to scan the mongo repositories, where we create de DAOS to access data and domain objects -->
+    <mongo:repositories base-package="edu.msc.fts.repository" />
+
+
+</beans>

@@ -1,0 +1,26 @@
+#shipment-tracking-form .track-button{
+    margin: 10px 0;
+}
+
+#map-canvas {
+    height: 300px;
+}
+
+#shipDetails h5 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#shipDetails {
+    background: #ddd;
+    padding: 10px;
+    display: none;
+}
+
+#shipDetails .header {
+    font-weight: bold;
+}
+
+#shipDetails td {
+    padding-left: 20px;
+}

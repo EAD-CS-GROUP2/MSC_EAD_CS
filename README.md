@@ -1,4 +1,4 @@
-# MSC_EAD_CS
+# MSC EAD CS
 <h3>Group 02</h3>
 <ul>
 <li>Dasun Hegoda (MS14920646)</li>

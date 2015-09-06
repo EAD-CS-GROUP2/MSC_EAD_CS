@@ -10,7 +10,8 @@
 <ul>
 <li>Java 1.7</li>
 <li>Maven 3.2</li>
-<li>Tomcat</li>
+<li>Tomcat 7.0</li>
+<li>MongoDB 3.0</li>
 </ul>
 
 

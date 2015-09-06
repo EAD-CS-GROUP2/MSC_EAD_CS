@@ -33,8 +33,8 @@ Freight Management Simplified!
 
 ##Demonstration
 * Test backoffice staff user will be created- username: staff1@msc.ship | password: 123
-* The vessel coordinates updating is mocked through an application which uses the */ajax/updateVesselLocation* web service API call. 
-* System Log file location: User-Home/fms.log
+* The vessel coordinates updating is mocked through an application which uses the `/ajax/updateVesselLocation` web service API call. 
+* System Log file location: `User-Home/fms.log`
 
 
 

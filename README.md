@@ -14,6 +14,10 @@
 <li>MongoDB 3.0</li>
 </ul>
 
+##Demonstration
+* The vessel coordinates updating is mocked through an application which uses the */ajax/updateVesselLocation* web service API call.
+
+
 
 
 

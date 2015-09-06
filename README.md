@@ -19,7 +19,7 @@
 * Building the system - Navigate to the project directory & execute the following maven command.
 `mvn clean install`
 
-* Start Mongo daemon on the server [need help?](http://docs.mongodb.org/master/tutorial/manage-mongodb-processes/)
+* Start Mongo daemon on the server ([guide](http://docs.mongodb.org/master/tutorial/manage-mongodb-processes/))
 `./mongod`
 
 * Make changes to the app configuration file if needed: src/main/resources/application.properties (uses the default mongo port: 27017)

@@ -17,7 +17,7 @@
 
 ##Deployment
 * Building the system - Navigate to the project directory & execute the following maven command.
-`mvn clean install`
+  * `mvn clean install`
 
 * Start Mongo daemon on the server ([guide](http://docs.mongodb.org/master/tutorial/manage-mongodb-processes/))
 `./mongod`

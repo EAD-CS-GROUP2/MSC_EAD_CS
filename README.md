@@ -1,5 +1,7 @@
-# MSC EAD CS
-<h3>Group 02</h3>
+# FMS
+Freight Management Simplified! 
+
+<h3>MSC EAD CS - Group 02</h3>
 <ul>
 <li>Dasun Hegoda (MS14920646)</li>
 <li>Varuna Lekamwasam (MS14921254)</li>

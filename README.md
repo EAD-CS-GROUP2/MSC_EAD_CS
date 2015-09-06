@@ -1,5 +1,7 @@
 # FMS
 Freight Management Simplified! 
+![GitHub Logo](https://cloud.githubusercontent.com/assets/388121/9705516/9310600e-54e4-11e5-8273-aa807b70d333.png)
+
 
 <h3>MSC EAD CS - Group 02</h3>
 <ul>
